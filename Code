@@ -1,0 +1,47 @@
+# lear
+# Bar
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+choice = int(input("\nEnter : "))
+
+
+if choice == 1:
+    # Bar 1
+    # Vertical bars
+    # array_1 is Names
+    array_1 = np.array(["A", "B", "C", "D", "E", "F", "G", "H"])
+    # array_2 is Rate
+    array_2 = np.array([3, 8, 1, 10, 4, 7, 2, 5])
+    plt.bar(array_1, array_2)
+
+
+elif choice == 2:
+    # Bar 2
+    # Horizontal bars
+    # barh makes it horizontal
+    array_3 = np.array(["A", "B", "C", "D"])
+    array_4 = np.array([4, 1, 7, 10])
+    plt.barh(array_3, array_4)
+
+
+elif choice == 3:
+    # Bar 3
+    # We also can change bars color
+    array_5 = np.array(["A", "B", "C", "D"])
+    array_6 = np.array([5, 2, 7, 9])
+    plt.barh(array_5, array_6, color = "red")
+
+
+elif choice == 4:
+    # Bar 4
+    # We also can change width of bars
+    array_7 = np.array(["A", "B", "C", "D"])
+    array_8 = np.array([2, 4, 6, 8])
+    plt.bar(array_7, array_8, width = 0.2, color = "darkgreen")
+
+
+plt.show()
